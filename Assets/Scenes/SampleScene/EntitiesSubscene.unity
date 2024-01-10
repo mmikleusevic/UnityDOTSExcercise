@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cubePrefab: {fileID: 8915721821769467807, guid: dc7f09e71c5897d409a045c50637617a, type: 3}
-  amountToSpawn: 5
+  amountToSpawn: 50
 --- !u!1001 &7895157967135307668
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -224,6 +224,9 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6774944196192483703, guid: 8ed00670d807d21428b34775568fd1ac, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 7895157967135307680}
+    - targetCorrespondingSourceObject: {fileID: 6774944196192483703, guid: 8ed00670d807d21428b34775568fd1ac, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 7895157967135307670}
     - targetCorrespondingSourceObject: {fileID: 6774944196192483703, guid: 8ed00670d807d21428b34775568fd1ac, type: 3}
       insertIndex: -1
@@ -257,6 +260,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb28e502c5bd7da40b1f1a65707c4673, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7895157967135307680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7895157967135307669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dce036f1e78740748a1bd6c83fd1a3ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
