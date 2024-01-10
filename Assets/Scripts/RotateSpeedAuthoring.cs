@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class RotateSpeedAuthoring : MonoBehaviour
 {
-   public float value;
+    public float value;
 
     private class Baker : Baker<RotateSpeedAuthoring>
     {

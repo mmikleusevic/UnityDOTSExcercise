@@ -2,7 +2,7 @@ using Unity.Entities;
 using Unity.Transforms;
 
 public readonly partial struct RotatingMovingCubeAspect : IAspect
-{  
+{
     public readonly RefRW<LocalTransform> localTransform;
     public readonly RefRO<RotateSpeed> rotateSpeed;
     public readonly RefRO<Movement> movement;
