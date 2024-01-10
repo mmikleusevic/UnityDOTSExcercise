@@ -17,7 +17,7 @@ public partial class SpawnCubeSystem : SystemBase
 
         SpawnCubesConfig spawnCubesConfig = SystemAPI.GetSingleton<SpawnCubesConfig>();
 
-        NativeArray<Entity> entities = EntityManager.Instantiate(spawnCubesConfig.cubePrefabEntity, spawnCubesConfig.amountToSpawn, Allocator.Persistent);
+        NativeArray<Entity> entities = EntityManager.Instantiate(spawnCubesConfig.cubePrefabEntity, spawnCubesConfig.amountToSpawn, WorldUpdateAllocator);
 
         foreach(Entity entity in entities)
         {
