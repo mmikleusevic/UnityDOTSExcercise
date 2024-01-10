@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3337984648024636268}
   - component: {fileID: 4051094257825191766}
   - component: {fileID: 3754552460829816870}
+  - component: {fileID: 1660570456170112539}
   m_Layer: 0
   m_Name: RotatingCube
   m_TagString: Untagged
@@ -119,3 +120,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 3
+--- !u!114 &1660570456170112539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8915721821769467807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3371349219e22343b22d2aca4187b3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

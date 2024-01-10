@@ -12,24 +12,30 @@ public partial struct RotatingCubeSystem : ISystem
     [BurstCompile]
     public void OnUpdate(ref SystemState state)
     {
-        //foreach ((RefRW<LocalTransform> localTransform, RefRO<RotateSpeed> rotateSpeed) in SystemAPI.Query<RefRW<LocalTransform>,RefRO<RotateSpeed>>())
+        state.Enabled = false;
+        return;
+
+        //Disabled for HandleCubesSystem
+
+        //foreach ((RefRW<LocalTransform> localTransform, RefRO<RotateSpeed> rotateSpeed) in SystemAPI.Query<RefRW<LocalTransform>, RefRO<RotateSpeed>>().WithAll<RotatingCube>())
         //{
         //    localTransform.ValueRW = localTransform.ValueRO.RotateY(rotateSpeed.ValueRO.value * SystemAPI.Time.DeltaTime);
         //}
 
-        RotatingCubeJob rotatingCubeJob = new RotatingCubeJob
-        {
-            deltaTime = SystemAPI.Time.DeltaTime
-        };
+        //RotatingCubeJob rotatingCubeJob = new RotatingCubeJob
+        //{
+        //    deltaTime = SystemAPI.Time.DeltaTime
+        //};
 
         //If IJobEntity then like this, also if you use ScheduleParallel() it splits across multiple worker threads only after 128 entities, till that it keeps it on one
-        rotatingCubeJob.Schedule();
+        //rotatingCubeJob.Schedule();
 
         //If IJobFor or anything else
         //state.Dependency = rotatingCubeJob.Schedule(state.Dependency);
     }
 
     [BurstCompile]
+    [WithAll(typeof(RotatingCube))]
     public partial struct RotatingCubeJob : IJobEntity
     {
         public float deltaTime;
