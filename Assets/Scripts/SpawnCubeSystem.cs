@@ -32,5 +32,8 @@ public partial class SpawnCubeSystem : SystemBase
                 Rotation = quaternion.identity
             });
         }
+
+        //Dispose nativelist after
+        entities.Dispose();
     }
 }
